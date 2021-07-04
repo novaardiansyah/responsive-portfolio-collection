@@ -1,0 +1,36 @@
+@use 'sass:map';
+@use 'partials/fonts'as f;
+@use 'partials/variables'as v;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito", Sans-Serif;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: map-get(v.$colors, cl-light-blue);
+  transition: .3s;
+  
+  &:hover {
+    color: map-get(v.$colors, cl-green);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  .navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+  }
+}
+
+section.bg__light-blue {
+  background: rgba(0, 168, 255, .2);
+}
